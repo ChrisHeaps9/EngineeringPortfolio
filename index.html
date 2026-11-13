@@ -2,138 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset ="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Portfolio | Systems & Controls</title>
-    
-    <!-- SECURE TAILWIND LINK -->
-    <script src="https://csn.tailwindcss.com"></script>
-    
-    <!-- SECURE & FIXED LUCIDE ICONS LINK -->
+    <title>Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com"></script>
-</head>
+
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-500 selection:text-white">
-
-    <!-- Sticky Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <a href="#" class="font-mono font-bold text-lg tracking-tight text-slate-900 hover:text-blue-600 transition-colors">
-                ~/systems-portfolio
-            </a>
-            <div class="flex items-center gap-6">
-                <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Projects</a>
-                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
-                <!-- Update these hrefs with your actual professional links -->
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900 transition-colors" aria-label="GitHub">
-                    <i data-lucide="github" class="w-5 h-5"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900 transition-colors" aria-label="LinkedIn">
-                    <i data-lucide="linkedin" class="w-5 h-5"></i>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero / Introduction Section -->
-    <header id="about" class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center md:text-left">
-        <div class="max-w-3xl">
-            <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
-                Aerospace & Mechanical Systems
-            </span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mt-4 mb-6 leading-tight">
-                Designing Cyber-Physical Architectures & Simulation Frameworks
-            </h1>
-            <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                Welcome to my engineering repository. I specialize in building modular physical network solvers, continuous time dynamics models, and transient state simulation pipelines to solve complex multi-domain problems.
-            </p>
-            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium bg-white text-slate-700 rounded-md border border-slate-200 shadow-sm"><i data-lucide="cpu" class="w-3.5 h-3.5 text-slate-400"></i> Control Systems</span>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium bg-white text-slate-700 rounded-md border border-slate-200 shadow-sm"><i data-lucide="flame" class="w-3.5 h-3.5 text-slate-400"></i> Thermal Modeling</span>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium bg-white text-slate-700 rounded-md border border-slate-200 shadow-sm"><i data-lucide="binary" class="w-3.5 h-3.5 text-slate-400"></i> MATLAB / Simulink</span>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium bg-white text-slate-700 rounded-md border border-slate-200 shadow-sm"><i data-lucide="terminal" class="w-3.5 h-3.5 text-slate-400"></i> C++ & Python</span>
-            </div>
+    <header class="bg-slate-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Engineering Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Visual Portfolio Project Grid -->
-    <main id="projects" class="max-w-6xl mx-auto px-6 pb-24">
-        <div class="border-t border-slate-200 pt-12 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Technical Case Studies</h2>
-                <p class="text-slate-500 text-sm mt-1">Select a card to audit the equations, simulation parameters, and source models.</p>
-            </div>
-        </div>
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="mb-12">
+            <h2 class="text-xl font-semibold mb-4">About Me</h2>
+            <p>Hello! I'm an engineering student passionate about technology and innovation. I enjoy working on projects that challenge my skills and allow me to learn new things.</p>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            <!-- Project Card 1 -->
-            <div class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:border-slate-300 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+        <section id="projects" class="mb-12">
+            <h2 class="text-xl font-semibold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project cards will go here -->
+            </div>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-xl font-semibold mb-4">Contact</h2>
+            <form action="#" method="POST" class="space-y-4">
                 <div>
-                    <!-- Visual Asset Window -->
-                    <div class="h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-100 relative group-hover:bg-slate-950 transition-colors">
-                        <i data-lucide="network" class="w-12 h-12 text-slate-700 absolute opacity-20 transform group-hover:scale-110 transition-transform"></i>
-                        <span class="text-slate-400 font-mono text-xs z-10">[Simulink Model Schematic SVG]</span>
-                    </div>
-                    <!-- Card Details -->
-                    <div class="p-6">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Simulation & Control</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-3 group-hover:text-blue-600 transition-colors">Modular Cyber-Physical Plant Simulator</h3>
-                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-                            Developing scalable, physical network emulations to track boundary layer transients, cycle optimization, and automated system diagnostics.
-                        </p>
-                    </div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                 </div>
-                <!-- Card Footer Action -->
-                <div class="px-6 pb-6 pt-2 border-t border-slate-50 flex items-center justify-between">
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">Simulink</span>
-                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">SVG</span>
-                    </div>
-                    <!-- Links to your nested project page -->
-                    <a href="projects/cyber-physical-plant.html" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-700">
-                        Explore System <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:border-slate-300 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="h-48 bg-slate-800 flex items-center justify-center p-4 border-b border-slate-100 relative group-hover:bg-slate-850 transition-colors">
-                        <i data-lucide="database" class="w-12 h-12 text-slate-700 absolute opacity-20 transform group-hover:scale-110 transition-transform"></i>
-                        <span class="text-slate-400 font-mono text-xs z-10">[Data Automation Plot Frame]</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Data Engineering</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-3 group-hover:text-emerald-600 transition-colors">Automated CSV Data Pipeline</h3>
-                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-                            A highly optimized processing script parsing binary transient datasets, scrubbing out noise anomalies, and mapping system dynamics over massive parameter sweeps.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2 border-t border-slate-50 flex items-center justify-between">
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">Python</span>
-                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">SciPy</span>
-                    </div>
-                    <a href="projects/data-pipeline.html" class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 hover:text-emerald-700">
-                        Explore Script <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 font-mono">
-        &copy; 2026 Systems Portfolio. Compiled via GitHub Actions.
-    </footer>
-
-    <!-- Initialize Lucide Icons at Runtime -->
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus
